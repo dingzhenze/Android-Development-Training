@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Chapter2</string>
+    <string name="msg">消息</string>
+    <string name="fans">粉丝</string>
+    <string name="zan">赞</string>
+    <string name="at">＠我的</string>
+    <string name="cmt">评论</string>
+</resources>
