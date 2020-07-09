@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">每日上报</string>
+    <string name="title">学生每日健康打卡</string>
+    <string name="name">姓名 Name</string>
+    <string name="hint">请输入姓名</string>
+    <string name="fever">今日是否有发热症状 Do you have a fever today</string>
+    <string name="yes">是 Yes</string>
+    <string name="no">否 No</string>
+    <string name="area">你是否5月30日后从下列地区返回浙江（含经停） Did you return to Zhejiang from the following areas after May 30th (including stopovers)</string>
+    <string name="wuhan">武汉 Wuhan</string>
+    <string name="hubei">湖北（除武汉） Hubei (non-Wuhan regions)</string>
+    <string name="jilin">吉林 Jilin</string>
+    <string name="beijing">北京 BeiJing</string>
+    <string name="submit">提交</string>
+</resources>

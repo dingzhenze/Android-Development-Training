@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_zju"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/zju"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#003f88"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_zju"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="@string/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <TextView
+        android:id="@+id/text_fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fever"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_name" />
+
+    <RadioGroup
+        android:id="@+id/radio_fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_fever">
+
+        <RadioButton
+            android:id="@+id/radio_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_fever" />
+
+    <CheckBox
+        android:id="@+id/box_wuhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wuhan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_area" />
+
+    <CheckBox
+        android:id="@+id/box_hubei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hubei"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_wuhan" />
+
+    <CheckBox
+    android:id="@+id/box_jilin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/jilin"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/box_hubei" />
+
+    <CheckBox
+        android:id="@+id/box_beijing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beijing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_jilin" />
+
+    <CheckBox
+        android:id="@+id/box_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_beijing" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
